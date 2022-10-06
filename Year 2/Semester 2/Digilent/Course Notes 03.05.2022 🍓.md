@@ -39,7 +39,7 @@ modified: '2022-05-10T13:35:27.716Z'
 
 - avem deja stack uri USB, TCP/IP scrise (nu avem coliziuni datorita memory managementului automatizat)
 
-|||
+| | |
 |-|-|
 |User Space| Kernel Space|
 |less permsissions - i.e. apps|hardware management - more dangerous|
