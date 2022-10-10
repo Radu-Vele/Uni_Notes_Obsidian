@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Year 3/Semester 1/Structure of Computer Systems/Lectures/L1.md",
+            "file": "Year 3/Semester 1/Structure of Computer Systems/Lab/L1.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Lectures/L1.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Lab/L1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Lectures/L1.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Lab/L1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Lectures/L1.md"
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Lab/L1.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "156e4d7a28485914",
   "lastOpenFiles": [
-    "Year 3/Semester 1/Artificial Intelligence/UCC/About the Plan.md",
-    "Year 3/Semester 1/Artificial Intelligence/About the Course.md",
-    "Year 3/Semester 1/Structure of Computer Systems/Lectures/L1.md",
-    "Year 3/Semester 1/Structure of Computer Systems/About the Course.md",
-    "Year 3/Semester 1/Artificial Intelligence/UCC.md",
-    "Year 3/Semester 1/Artificial Intelligence/Lectures/L1.md",
-    "Year 3/Semester 1/Artificial Intelligence/Labs/About the Lab.md",
+    "Year 3/Semester 1/Software Engineering/Lecture/L1.md",
+    "Year 3/Semester 1/Software Engineering/Lecture/L2.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Project/About the Project.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Project/Project Overview.md",
+    "Year 3/Semester 1/Software Engineering/About the Course.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Lab/L2.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Lab/L1.md",
     "Year 3/Semester 1/Functional Programming/Lab/L1.md",
     "Year 3/Semester 1/Functional Programming/Lab/About the Lab.md",
-    "Year 3/Semester 1/Functional Programming/Lecture/L1.md"
+    "Year 3/Semester 1/Design with Microprocessors/About the course.md"
   ]
 }
