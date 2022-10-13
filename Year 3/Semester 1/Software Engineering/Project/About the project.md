@@ -1,0 +1,36 @@
+# SE Project 
+
+> [!Note] Team
+> Bori, Andreea, Radu
+> Technologies: Java & Spring
+
+### Project:
+
+**Deadlines**:
+1. Mini-project **Hello World** for a SaaS application **1st November**
+	- program accessed from web endpoints
+	- described in book saasbook.info (**first 4 chapters**) (written in ruby but we don't need to actually learn it) (follow that architecture)
+	- 1 project/team or can do it by myself
+	- can use any of Java&Spring/Python&Django/Ruby&Rails
+	- max 8 membri (2, 3, e ok)
+
+2. Final project **15th November (before it)**
+	- Choose Team + Theme + Technologies
+	- Use cases (functions of project) + Use case model to be specified
+	- Setup the project extending the SaaS project to be suitable
+
+3. Final project delivery **Week 13 (for documentation)**
+	- documentation and executales
+	- can follow the book or various tools:
+		- PRISM Case studies + model checkers 
+			- UML modelling is extended with verification of the model
+			- Verify programs automatically (all possible execution) 
+			- Inspiration sources on the website
+		- Session Types (app-level protocol that is verified at compile-time) 
+			- we can **debug** distributed programs at compile-time (better than testing)
+		- Run-time verification (K Framework)
+			- big state-space
+		- Model checkers (state space explosion issue)
+		- Theorem provers (Coq) (prove the properties of the program) e.g. Verifiable C, book Software Foundations.
+		- AI / Machine Learning / Heuristics based methods:
+			- No guarantees tho

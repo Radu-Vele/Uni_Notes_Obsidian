@@ -77,8 +77,9 @@
 
 ### Labs
 
-- [ ] AI1_01
-- [ ] AI1_02
+- [x] AI1_01
+	- basic numpy operations, not big deal
+- [ ] AI1_02 Pandas
 - [ ] AI1_03
 - [ ] AI1_04
 - [ ] AI1_05

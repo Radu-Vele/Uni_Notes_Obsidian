@@ -9,3 +9,5 @@
 ## Organization
 - moodle-based
 - PDFs + code
+
+- can get bonus points if we upload the *** problems on moodle
