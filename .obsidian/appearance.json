@@ -1,6 +1,10 @@
 {
-  "baseFontSize": 23,
+  "baseFontSize": 22,
   "enabledCssSnippets": [
     "code"
-  ]
+  ],
+  "accentColor": "",
+  "theme": "obsidian",
+  "showViewHeader": false,
+  "translucency": false
 }

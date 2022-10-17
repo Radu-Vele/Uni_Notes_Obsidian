@@ -19,8 +19,10 @@ modified: '2022-05-13T08:31:17.816Z'
   
 - different processes threads, nu avem nevoie de pipes: global semaphores (exemplu la semafoare program samples)
 
-```c
-#include <semaphore.h>x
+```C
+
+#include <semaphore.h>
+int a; # 
 //named semaphore
 sem_open(...,...,fara O_CREAT);
 //remove it 

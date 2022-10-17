@@ -1,11 +1,10 @@
-# About the Lab
 
 > [!note] prof. Victor Bacu
 > victor.bacu@cs.utcluj.ro
 
 Goal: 3D graphical apps using OpenGL library implementation
 
-- moodle-based
+- moodle-based 
 
 ## Resources:
 - VS project with infrastructure

@@ -4,16 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "156e4d7a28485914",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Year 3/Semester 1/Graphic Processing/Lab/About the Lab.md",
-            "mode": "source",
-            "source": false
+        "id": "01f8110f5bac6eac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "63c7435e0a4d9171",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Lab/About the Lab.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        }
+        ]
       }
     ],
     "direction": "vertical"
@@ -31,7 +37,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -61,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 408.5
+    "width": 262.5
   },
   "right": {
     "id": "e2aa1390c482dfaa",
@@ -77,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 3/Semester 1/Graphic Processing/Lab/About the Lab.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Lab/About the Lab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 3/Semester 1/Graphic Processing/Lab/About the Lab.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Lab/About the Lab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 3/Semester 1/Graphic Processing/Lab/About the Lab.md"
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Lab/About the Lab.md"
               }
             }
           }
@@ -128,17 +136,20 @@
     "width": 102,
     "collapsed": true
   },
-  "active": "156e4d7a28485914",
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "63c7435e0a4d9171",
   "lastOpenFiles": [
-    "Year 3/Semester 1/Structure of Computer Systems/Lectures/L2.md",
-    "Year 3/Semester 1/Structure of Computer Systems/About the Course.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Project/About the Project.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Project/Project Overview.md",
     "Year 3/Semester 1/Structure of Computer Systems/Lectures/L1.md",
-    "Year 3/Semester 1/Graphic Processing/Lecture/L1.md",
-    "Year 3/Semester 1/Graphic Processing/About the Course.md",
-    "Year 3/Semester 1/Artificial Intelligence/UCC/About the Plan.md",
-    "Year 3/Semester 1/Artificial Intelligence/Lectures/L2.md",
-    "Year 3/Semester 1/Structure of Computer Systems/Lab/L1.md",
-    "Year 3/Semester 1/Artificial Intelligence/Lectures/L1.md",
-    "Year 3/Semester 1/Software Engineering/Project/Project Details.md"
+    "Year 3/Semester 1/Structure of Computer Systems/Lab/L3.md",
+    "Year 3/Semester 1/Design with Microprocessors/Lectures/L3.md",
+    "Year 3/Semester 1/Software Engineering/Project/Project Team Details.md",
+    "Year 3/Semester 1/Design with Microprocessors/Lectures/L2.md",
+    "Year 3/Semester 1/Software Engineering/Project/SaaS Book 1st 4 chapters takeaways.md",
+    "Year 3/Semester 1/Software Engineering/Project/About the project.md",
+    "Year 3/Semester 1/Functional Programming/Lecture/L2.md"
   ]
 }
