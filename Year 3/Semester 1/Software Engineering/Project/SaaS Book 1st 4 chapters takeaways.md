@@ -45,7 +45,170 @@
 
 - the use of HTML & CSS
 
+> SOA = service-oriented architecture (small services rather than monolithic design)
+
+### Beautiful vs Legacy Code
+
+> Legacy code = old code that still meets customer needs and can be extended.
+
+Beautiful code is guaranteed to live a long happy life 👵
+
 # Ch 2
 
+## Learning a new language
+- find the specific aspects of a language that make it useful to encapsulate within a framework
+
+### Pair programming
+- driver 🚘 and observer 🔭
+
+### OOP in Ruby
+- skip
+
+## SaaS Application Architecture - our Jam 🎷
+
+### Client-Server Architecture
+---
+
+Is basically a design pattern, there are also other design patterns for the web (peer-to-peer = Torrent style)
+
+> URI = universal resource identifier - to access a resource from the web
+
+- The **Client** makes request (e.g. mobile app) to the server and present the information (+ interaction) with the user
+- The **server** is specialized to process commands of more clients
+
+We need to deploy a mini server on our computer that lets the developer app (1 client) to interact with it
+
+Client frameworks: {Angular, React, etc.}
+Server frameworks: {Spring, Django, Rails, Node, etc.}
+
+> we will use the term “SaaS” (software as a service)
+  to mean “client-server systems built to operate using the open standards of the World Wide Web,”
+
+### HTTP Routes Communication
+---
+
+`Useful in our app to establish communication between backend and frontend`
+
+> [!Question] To investigate...
+> How does **spring** add abstraction over the client-server communication?
 
 
+Network protocols (TCP/IP, HTTP,)
+
+- instead of IP we use DNS (domain name system) (maps hostnames to IP addresses)
+
+- how to refer the host computer which runs our app
+```
+hostname = localhost
+ip addr = 127.0.0.1
+
+default http port = 80
+default https port = 443
+```
+
+- we also need a **port number**, may depend on your IDE (IntelliJ)
+
+**HTTP Rules:**
+- client: init TCP/IP connection with IP + Port Number 
+	- check if HTTP server listening to that port exists (success/failure)
+- client: send request (operation + resource)
+- server: http response sent (success or errors + maybe and HTTP cookie = identify client on future interactions)
+
+Request = string containing more elements
+```
+Methods:
+GET, POST, PUT, PATCH, or DELETE
+```
+
+![[Pasted image 20221023131626.png]]
+
+Cookies save information about a specific client and can indicate whether a "session" is currently active (e.g. a user is logged in)
+
+### SOA
+---
+
+Javascript code added to the web pages could make more requests to the server without the need for reloading the page. Response from **server**: XML or JSON data structure returned
+
+> \[...\] a set of independent services that could be composed to produce larger
+  sites—a so-called **Service Oriented Architecture (SOA)**.
+
+- different services can only be accessed through **interfaces** that are external of the service 
+![[Pasted image 20221023133105.png]]
+
+> Microservice = service that performs a single task (type of task) incorporated within an outside service accessible through an API. Operations related to closely tight set of resources
+
+> A (micro)service is an independently deployable component of bounded scope that supports interoperability though message-based communication
+
+### RESTful APIs
+---
+
+> API = convention between callee and caller
+
+> REST = **R**epresentational **S**tate **T**ransfer. 
+
+REST:
+	mapping: Requests $\to$ Actions
+	- helps us build the service and the API
+	- each entity manipulated by the service is represented as a resource given a unique ID
+
+Question an API should answer to
+1. What is the primary resource affected by the operation?
+2. What is the operation to be done on that resource? What are the possible results? What
+are the possible side effects, if any?
+3. What other data is necessary to complete the operation, if any, and how is it specified?
+
+Default operations:
+- CRUDI
+
+### Additional Explanations on REST
+
+[Video Link]()
+
+- rest api - communication client - server
+- restful - uses rest apis
+REST API
+	- stateless
+	- high performance thanks to caching
+
+### Example:
+- endpoint: http://icecream.com/api/flavors
+	- api portion of the endpoint
+	- flavors is the resource
+
+- communication: request +  response
+
+Requests = HTTP methods/operations:
+	- create - `POST`
+	- read - `GET`
+	- update - `PUT`
+	- delete - `DELETE`
+
+```
+Request:
+HEADERS
+OPERATION | ENDPONT | PARAMETERS
+```
+
+Response = JSON usually:
+
+```
+Get flavors in stock
+
+GET 
+
+Replace flavor mint with choco
+
+PUT /api/flavors/1 {"flavor" : "choco"}
+``
+Add new flavor
+
+CREATE /api/flavors {"flavor" : "rasp"}
+
+```
+
+
+### RESTful URIs
+---
+
+### Create and deploy simple SAAS App
+---
