@@ -13,6 +13,8 @@
 	- 1 project/team or can do it by myself
 	- can use any of Java&Spring/Python&Django/Ruby&Rails
 	- max 8 membri (2, 3, e ok)
+	- MVC
+	- e.g. Spring **MVC** Web
 
 2. Final project **15th November (before it)**
 	- Choose Team + Theme + Technologies
