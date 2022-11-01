@@ -1,10 +1,8 @@
 
-## Spring Documentation
+## Spring Documentation 🍃
 
-[Spring Hello World
-](https://spring.io/quickstart)
+[Spring Hello World](https://spring.io/quickstart)
 [Spring Framework](https://docs.spring.io/spring-framework/docs/current/reference/html/)
-
 [Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
 
 ## Roadmap
@@ -27,7 +25,6 @@
 [Video Link](https://www.youtube.com/watch?v=5kOGdZmpSDI)
 
 Needed software:
-
 - IntelliJ
 - Java 17 (?)
 - I think Spring is installed by default
@@ -36,7 +33,6 @@ Needed software:
 - Spring Web
 
 Can add them later
-
 `pom.xml` - contains the dependencies and can add more there
 
 ### Java part

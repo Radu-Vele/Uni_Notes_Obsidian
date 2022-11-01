@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "74db485da7aff1c3",
+        "id": "29e2abe6902dd30c",
         "type": "tabs",
         "children": [
           {
-            "id": "fd8fdfe343737a4f",
+            "id": "57d1a74658a68da1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Lectures/L3.md",
+                "file": "Year 3/Semester 1/Software Engineering/About the Course.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "de375a331b6c7fec",
+            "id": "7355a04f8c6cef55",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Lectures/L4.md",
+                "file": "Year 3/Semester 1/Software Engineering/Project/Theme Brainstorming.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Lectures/L4.md",
+                "file": "Year 3/Semester 1/Software Engineering/Project/Theme Brainstorming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Lectures/L4.md",
+                "file": "Year 3/Semester 1/Software Engineering/Project/Theme Brainstorming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Lectures/L4.md"
+                "file": "Year 3/Semester 1/Software Engineering/Project/Theme Brainstorming.md"
               }
             }
           }
@@ -149,17 +149,17 @@
     "width": 102,
     "collapsed": true
   },
-  "active": "de375a331b6c7fec",
+  "active": "7355a04f8c6cef55",
   "lastOpenFiles": [
-    "Year 3/Semester 1/Structure of Computer Systems/Lab/About the Lab.md",
-    "Year 3/Semester 1/Structure of Computer Systems/Lectures/L4.md",
-    "Year 3/Semester 1/Structure of Computer Systems/Lectures/L3.md",
-    "Year 3/Semester 1/Structure of Computer Systems/Lab/L4.md",
-    "Year 3/Semester 1/Graphic Processing/Lecture/L3.md",
-    "Year 3/Semester 1/Graphic Processing/Lecture/L2.md",
-    "Year 3/Semester 1/Graphic Processing/Lecture/L1.md",
-    "Year 3/Semester 1/Graphic Processing/Pasted image 20221023131626.png",
-    "Year 3/Semester 1/Graphic Processing/Pasted image 20221024081820.png",
-    "Year 3/Semester 1/Graphic Processing/Pasted image 20221025094250.png"
+    "Year 3/Semester 1/Software Engineering/About the Course.md",
+    "Year 3/Semester 1/Functional Programming/Lecture/L1.md",
+    "Year 3/Semester 1/Functional Programming/Lab/About the Lab.md",
+    "Year 3/Semester 1/Software Engineering/Project/Spring Boot.md",
+    "Year 3/Semester 1/Software Engineering/Project/SaaS Book 1st 4 chapters takeaways.md",
+    "Year 3/Semester 1/Software Engineering/Lab/About the Lab.md",
+    "Year 3/Semester 1/Software Engineering/Lab/L4 (Week 5).md",
+    "Year 3/Semester 1/Artificial Intelligence/Labs/L3.md",
+    "Year 3/Semester 1/Artificial Intelligence/Labs/L1.md",
+    "Year 3/Semester 1/Artificial Intelligence/Labs/L2.md"
   ]
 }
