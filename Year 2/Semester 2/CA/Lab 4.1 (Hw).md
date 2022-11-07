@@ -21,7 +21,8 @@ Starting from the instruction formats presented in the previous section write th
 |Logical OR|B"000_001_010_011_0_110"|RF[rd]<-RF[rs] OR RF[rt] |
 |****Logical XOR***|B"000_001_010_011_0_111"|RF[rd]<-RF[rs] ^ RF[rt] |
 |****Shift Right Arithmetic***|B"000_001_010_011_1_000"|RF[rd]<-RF[rs] >> 1 (with S_EXT)|
-(*) additional instructions
+(\*) additional instructions
+
 ### I-Type instructions
 ---
 |Instruction| Format | RTL Abstract| 
@@ -87,7 +88,9 @@ done;
 
 ## Assignment 3
 ---
-Draw the Data-Path of your single-cycle MIPS 16 processor. Be sure to include all the necessary components on the data-path, such that all the 15 instructions execute correctly.
+
+ inDraw the Data-Path of your single-cycle MIPS 16 processor. Be sure to include all the necessary components on the data-path, such that all the 15 instructions execute correctly.
+
 ---
 ### MIPS Data path:
 

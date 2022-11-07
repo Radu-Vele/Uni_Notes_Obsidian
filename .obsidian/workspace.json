@@ -4,28 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "29e2abe6902dd30c",
+        "id": "a9126fc99679d8aa",
         "type": "tabs",
         "children": [
           {
-            "id": "57d1a74658a68da1",
+            "id": "9d266bfcba9b97f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 3/Semester 1/Software Engineering/About the Course.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/0.Project Overview.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7355a04f8c6cef55",
+            "id": "408518f9bb625e72",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 3/Semester 1/Software Engineering/Project/Theme Brainstorming.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f14b00a272357cee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 3/Semester 1/Software Engineering/Project/Theme Brainstorming.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 3/Semester 1/Software Engineering/Project/Theme Brainstorming.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 3/Semester 1/Software Engineering/Project/Theme Brainstorming.md"
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 3.md"
               }
             }
           }
@@ -149,17 +161,17 @@
     "width": 102,
     "collapsed": true
   },
-  "active": "7355a04f8c6cef55",
+  "active": "408518f9bb625e72",
   "lastOpenFiles": [
-    "Year 3/Semester 1/Software Engineering/About the Course.md",
-    "Year 3/Semester 1/Functional Programming/Lecture/L1.md",
-    "Year 3/Semester 1/Functional Programming/Lab/About the Lab.md",
-    "Year 3/Semester 1/Software Engineering/Project/Spring Boot.md",
-    "Year 3/Semester 1/Software Engineering/Project/SaaS Book 1st 4 chapters takeaways.md",
-    "Year 3/Semester 1/Software Engineering/Lab/About the Lab.md",
-    "Year 3/Semester 1/Software Engineering/Lab/L4 (Week 5).md",
-    "Year 3/Semester 1/Artificial Intelligence/Labs/L3.md",
-    "Year 3/Semester 1/Artificial Intelligence/Labs/L1.md",
-    "Year 3/Semester 1/Artificial Intelligence/Labs/L2.md"
+    "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 2.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 3.md",
+    "Year 2/Semester 2/CA/Lab 4.1 (Hw).md",
+    "Year 2/Semester 2/CA/Lab 6.1 Control Signals Table.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Project/0.Project Overview.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 1.md",
+    "Year 2/Semester 2/CA/Lab 8.0 MIPS Memory Unit + Write Back.md",
+    "Year 2/Semester 2/CA/Lab 8.1 Test Program.md",
+    "Year 2/Semester 2/CA/Lab 9 Notes.md",
+    "Year 2/Semester 2/CA/Lab 7.0 MIPS Execution Unit (ALU).md"
   ]
 }
