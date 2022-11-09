@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "a9126fc99679d8aa",
+        "id": "4cc0300bad05d2f6",
         "type": "tabs",
         "children": [
           {
-            "id": "9d266bfcba9b97f3",
+            "id": "e8a9d3ddf1227298",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/0.Project Overview.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "408518f9bb625e72",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 3.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f14b00a272357cee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 3.md",
+                "file": "Year 3/Semester 1/Artificial Intelligence/Labs/L5.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 3.md",
+                "file": "Year 3/Semester 1/Artificial Intelligence/Labs/L5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 3.md",
+                "file": "Year 3/Semester 1/Artificial Intelligence/Labs/L5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 3.md"
+                "file": "Year 3/Semester 1/Artificial Intelligence/Labs/L5.md"
               }
             }
           }
@@ -161,17 +136,17 @@
     "width": 102,
     "collapsed": true
   },
-  "active": "408518f9bb625e72",
+  "active": "e8a9d3ddf1227298",
   "lastOpenFiles": [
-    "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 2.md",
-    "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 3.md",
-    "Year 2/Semester 2/CA/Lab 4.1 (Hw).md",
-    "Year 2/Semester 2/CA/Lab 6.1 Control Signals Table.md",
-    "Year 3/Semester 1/Structure of Computer Systems/Project/0.Project Overview.md",
-    "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 1.md",
-    "Year 2/Semester 2/CA/Lab 8.0 MIPS Memory Unit + Write Back.md",
-    "Year 2/Semester 2/CA/Lab 8.1 Test Program.md",
-    "Year 2/Semester 2/CA/Lab 9 Notes.md",
-    "Year 2/Semester 2/CA/Lab 7.0 MIPS Execution Unit (ALU).md"
+    "Year 3/Semester 1/Functional Programming/Lab/L5.md",
+    "Year 3/Semester 1/Artificial Intelligence/Labs/L4.md",
+    "Year 3/Semester 1/Artificial Intelligence/Labs/L5.md",
+    "Year 3/Semester 1/Functional Programming/Lab/L6.md",
+    "Year 3/Semester 1/Software Engineering/Lab/L5.md",
+    "Year 3/Semester 1/Software Engineering/Lab/L4-OCSF Overview.md",
+    "Year 3/Semester 1/Software Engineering/Lab/L1.md",
+    "Year 3/Semester 1/Artificial Intelligence/UCC/About the Plan.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Lab/L6.md",
+    "Year 3/Semester 1/Software Engineering/Lab/L4 (Week 5).md"
   ]
 }
