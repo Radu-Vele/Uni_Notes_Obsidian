@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e8a9d3ddf1227298",
+            "id": "7b741ee878a54da7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 3/Semester 1/Artificial Intelligence/Labs/L5.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Lectures/L6.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 262.5
+    "width": 262.5,
+    "collapsed": true
   },
   "right": {
     "id": "e2aa1390c482dfaa",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 3/Semester 1/Artificial Intelligence/Labs/L5.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Lectures/L6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 3/Semester 1/Artificial Intelligence/Labs/L5.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Lectures/L6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 3/Semester 1/Artificial Intelligence/Labs/L5.md"
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Lectures/L6.md"
               }
             }
           }
@@ -136,17 +137,17 @@
     "width": 102,
     "collapsed": true
   },
-  "active": "e8a9d3ddf1227298",
+  "active": "7b741ee878a54da7",
   "lastOpenFiles": [
-    "Year 3/Semester 1/Functional Programming/Lab/L5.md",
-    "Year 3/Semester 1/Artificial Intelligence/Labs/L4.md",
-    "Year 3/Semester 1/Artificial Intelligence/Labs/L5.md",
-    "Year 3/Semester 1/Functional Programming/Lab/L6.md",
-    "Year 3/Semester 1/Software Engineering/Lab/L5.md",
-    "Year 3/Semester 1/Software Engineering/Lab/L4-OCSF Overview.md",
-    "Year 3/Semester 1/Software Engineering/Lab/L1.md",
-    "Year 3/Semester 1/Artificial Intelligence/UCC/About the Plan.md",
-    "Year 3/Semester 1/Structure of Computer Systems/Lab/L6.md",
-    "Year 3/Semester 1/Software Engineering/Lab/L4 (Week 5).md"
+    "Year 3/Semester 1/Graphic Processing/Lecture/L4.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Lectures/L5.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Lectures/L6.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 2.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 3.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Lectures/L4.md",
+    "Year 3/Semester 1/Graphic Processing/Lecture/L6.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Lectures/L3.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Lectures/L2.md",
+    "Year 3/Semester 1/Graphic Processing/Lecture/L5.md"
   ]
 }
