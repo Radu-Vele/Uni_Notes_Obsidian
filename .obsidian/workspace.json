@@ -8,12 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "097f9db116f3337c",
+            "id": "a5fb7bfea8095106",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Year 3/Semester 1/Software Engineering/Project/Theme Brainstorming.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "de5464cb2122154a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year 3/Semester 1/Software Engineering/Project/About the project.md",
                 "mode": "source",
                 "source": false
               }
@@ -136,17 +148,17 @@
     "width": 102,
     "collapsed": true
   },
-  "active": "097f9db116f3337c",
+  "active": "a5fb7bfea8095106",
   "lastOpenFiles": [
-    "Year 3/Semester 1/Graphic Processing/Lab/About the Lab.md",
-    "Year 3/Semester 1/Graphic Processing/Lab/L6.md",
-    "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 3.md",
-    "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 2.md",
-    "Year 3/Semester 1/Structure of Computer Systems/About the Course.md",
-    "Year 3/Semester 1/Structure of Computer Systems/Lab/L1.md",
-    "Year 3/Semester 1/Structure of Computer Systems/Lab/L6.md",
-    "Year 3/Semester 1/Structure of Computer Systems/Lab/L5.md",
-    "Year 3/Semester 1/Structure of Computer Systems/Lectures/L6.md",
+    "Year 3/Semester 1/Software Engineering/Project/SaaS Book 1st 4 chapters takeaways.md",
+    "Year 3/Semester 1/Software Engineering/Project/About the project.md",
+    "Year 3/Semester 1/Software Engineering/Project/Theme Brainstorming.md",
+    "Year 3/Semester 1/Software Engineering/Project/SaaS Book v2.md",
+    "Year 3/Semester 1/Software Engineering/Project/Spring Boot.md",
+    "Year 3/Semester 1/Software Engineering/Project/Meeting 20 Oct.md",
+    "Year 3/Semester 1/Software Engineering/Lecture/L2.md",
+    "Year 3/Semester 1/Software Engineering/Lecture/L1.md",
+    "Year 3/Semester 1/Software Engineering/Lab/L5.md",
     "Year 3/Semester 1/Functional Programming/Lecture/L6.md"
   ]
 }
