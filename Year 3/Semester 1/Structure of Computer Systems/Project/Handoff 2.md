@@ -10,14 +10,6 @@ First, put thoughts in order and in **project proposal** write a list of feature
 
 ---
 
-Test the existing pipeline:
-- testbench
-	- [ ] Done
-- Vivado simulation
-	- [ ] Done
-
----
-
 ## Analysis section
 - elaborate the bibliographic research by discussing the implementation, include pipeline diagrams
 - maybe flowcharts and **algorithms** (in my case the logic behind the Dynamic Branch Prediction)
