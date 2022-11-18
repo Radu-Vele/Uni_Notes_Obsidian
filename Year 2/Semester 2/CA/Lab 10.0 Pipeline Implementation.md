@@ -45,22 +45,22 @@ Pipeline Diagram
 
 |Instr. Nb.|Program|
 |-|-|
-1|add $1, $2, $3
-2|NoOp
-3|NoOp
-4|add $3, $1, $2
-5|NoOp
-6|add $4, $1, $2
-7|add $5, $3, $2
-8|NoOp
-9|NoOp
-10|lw $3, 5($5)
-11|NoOp
-12|NoOp
-13|add $4, $5, $3
-14|NoOp
-15|sw $3, 6($5)
-16|beq $3, $4, -6
+|1|add $1, $2, $3
+|2|NoOp
+|3|NoOp
+|4|add $3, $1, $2
+|5|NoOp
+|6|add $4, $1, $2
+|7|add $5, $3, $2
+|8|NoOp
+|9|NoOp
+|10|lw $3, 5($5)
+|11|NoOp
+|12|NoOp
+|13|add $4, $5, $3
+|14|NoOp
+|15|sw $3, 6($5)
+|16|beq $3, $4, -6
 
 ***3. Control Hazards***
 - occur in case of J and BEQ because instructions after them start to execute even though we want to change the flow of the program.
