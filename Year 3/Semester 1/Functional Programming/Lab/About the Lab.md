@@ -1,5 +1,3 @@
-# About the Lab
-
 ## Lab structure
 - Haskell and Elm
 - practical approach for FP
