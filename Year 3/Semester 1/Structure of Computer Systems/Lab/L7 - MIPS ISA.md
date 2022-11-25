@@ -1,4 +1,4 @@
-# MIPS 1
+# MIPS 1 
 
 ### Recap: 
 - 32 bits for the data width
@@ -20,6 +20,8 @@ NOR $r1, $r2, $r3
 SLL $r1, sa, $r2
 ADDI $r1, imm, $r2
 SUBI $r1, imm, $r2
+LD  
+ST
 JMP imm ;destination address
 ```
 

@@ -17,12 +17,14 @@ Revisit concepts and exercises (don't spend too much time)
 - Tail/Head recursive (L1)
 - Records, Tuples, etc. (L2)
 - List operations (L2)
-	- foldl
+	- foldl  
 	- foldr
 
 > [!important] FOLDL vs FOLDR in `ELM!`
-> foldL ( / ) z \[a, b, c, d\] = 
-> foldR ( / ) z \[a, b, c, d] = 
+> 
+> foldL ( / ) z \[a, b, c, d\] = d /( c / (b/ (a / z)))
+> 
+> foldR ( / ) z \[a, b, c, d] = a / (b / (c / (d / z )))
 
 - Inferred types
 - Maybe | Nothing
@@ -35,8 +37,8 @@ Revisit concepts and exercises (don't spend too much time)
 Start with lab 5, then complement with previous labs
 
 - Lab 5 - Pipelines, composition, Advanced Records, Error handling++,  Testing
-	- [ ] Done
+	- [x] Done
 - Lab 6 - Elm Web Apps, HTML, id and classes, tests
-	- [ ] Done
+	- [ ] Done - no super important stuff
 - Lab 7 - HTML dropdowns, checkbox, requests, JSON, documenting
-	- [ ] Done
+	- [ ] Done - no super important stuff
