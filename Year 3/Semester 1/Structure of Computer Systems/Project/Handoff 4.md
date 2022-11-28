@@ -9,11 +9,22 @@
 > 	- `I guess so`
 > - mips testbench for Identifying the instructions more easily? - set some aliases maybe?
 
-## Test the existing pipeline:
-- adapt it
+## 1. Test the existing pipeline:
+- adapt it - define exact requirements
+	- remove functionality for the branch on less than 0 and load upper immediate 
+	- [x]  Done
+	- remove sra, add MemRead functionality
+
+- Test all supported instruction
+	- R
+	- [x] Done
+	- make sure to cover the side effects (when control signals are 0, bla bla)
+	- I
+
 ### Changes to pipeline:
 1. Add branch to previous instruction
 2. Add testbenches
+3. Add hazard solution components
 
 - testbench
 	- [ ] Done
