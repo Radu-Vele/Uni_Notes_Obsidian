@@ -14,19 +14,52 @@
 	- remove functionality for the branch on less than 0 and load upper immediate 
 	- [x]  Done
 	- remove sra, add MemRead functionality
-
-- Test all supported instruction
-	- R
 	- [x] Done
-	- make sure to cover the side effects (when control signals are 0, bla bla)
-	- I
 
-### Changes to pipeline:
-1. Add branch to previous instruction
-2. Add testbenches
-3. Add hazard solution components
+### Test all supported instruction
+R-Type
+- [x] Done
+I-Type (addi subi)
+- [x] Done
+Load
+- [x]  Done
+Store
+- [x]  Done
+Branch
+- [x]  Done
+Jump
+- [x]  Done
 
-- testbench
-	- [ ] Done
-- Vivado simulation
-	- [ ] Done
+---
+
+## Implement Hazard Detection Logic:
+
+### 1. EX Forwarding unit
+- [ ] Tested functional
+- [ ] TopLevel functional
+
+### 2. MEM Forwarding unit
+- [ ] Tested functional
+- [ ] TopLevel functional
+
+### 3. HDU ID
+- [ ] Tested functional
+- [ ] TopLevel functional
+
+### 4. Add branch to ID stage
+- add jump computation in IF `necessary? - I guess yea`
+
+#### 4.1. Extend HDU
+- [ ] Tested functional
+- [ ] TopLevel functional
+
+#### 4.2. Forwarding Unit ID
+- [ ] Tested functional
+- [ ] TopLevel functional
+
+
+### 5. BHT Implementation
+- [ ] Tested functional
+- [ ] TopLevel functional
+
+

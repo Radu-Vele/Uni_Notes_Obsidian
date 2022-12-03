@@ -4,47 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "0bb9379851ef6ccd",
+        "id": "9613f46fd825190c",
         "type": "tabs",
         "children": [
           {
-            "id": "784523d1ce7e7be4",
+            "id": "a1d5036258f52127",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 3/Semester 1/Design with Microprocessors/Lectures/L7.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 4.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8d0fa0de501bc6a9",
+            "id": "11b4db4b622a0637",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 3/Semester 1/Design with Microprocessors/Lectures/L8.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5fc072ffef31bf62",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Year 3/Semester 1/Design with Microprocessors/Lectures/L9.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 4.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 3/Semester 1/Design with Microprocessors/Lectures/L9.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 3/Semester 1/Design with Microprocessors/Lectures/L9.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 3/Semester 1/Design with Microprocessors/Lectures/L9.md"
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 4.md"
               }
             }
           }
@@ -161,17 +149,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "5fc072ffef31bf62",
+  "active": "11b4db4b622a0637",
   "lastOpenFiles": [
-    "Year 3/Semester 1/Design with Microprocessors/Lectures/L8.md",
-    "Year 3/Semester 1/Design with Microprocessors/Lectures/L7.md",
-    "Year 3/Semester 1/Design with Microprocessors/Lab/L9 - Bluetooth.md",
-    "Year 3/Semester 1/Functional Programming/Lab/Assignment 1.md",
-    "Year 3/Semester 1/Functional Programming/Lab/L5.md",
-    "Year 3/Semester 1/Functional Programming/Lab/L6.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Project/0.Project Overview.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Project/0.About the Project.md",
     "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 4.md",
-    "Year 2/Semester 2/CA/Lab 10.0 Pipeline Implementation.md",
     "Year 2/Semester 2/CA/Lab 4.1 (Hw).md",
-    "Year 2/Semester 2/CA/Lab 7.0 MIPS Execution Unit (ALU).md"
+    "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 3.md",
+    "Year 3/Semester 1/Functional Programming/Lab/L6.md",
+    "Year 3/Semester 1/Functional Programming/Lab/Assignment 1.md",
+    "Year 3/Semester 1/Functional Programming/Lab/Test 2 Preparation.md",
+    "Year 3/Semester 1/Functional Programming/Lab/L8.md",
+    "Year 3/Semester 1/Functional Programming/Lab/L5.md"
   ]
 }
