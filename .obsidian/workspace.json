@@ -4,35 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "9613f46fd825190c",
+        "id": "ed97aa7197e20d99",
         "type": "tabs",
         "children": [
           {
-            "id": "a1d5036258f52127",
+            "id": "d3ca2f73f8f2949f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 4.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Lab/L9 MIPS Implementation.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "11b4db4b622a0637",
+            "id": "eba5a8d783504dec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 4.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Lab/L9 MIPS Implementation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 4.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Lab/L9 MIPS Implementation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 4.md",
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Lab/L9 MIPS Implementation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 4.md"
+                "file": "Year 3/Semester 1/Structure of Computer Systems/Lab/L9 MIPS Implementation.md"
               }
             }
           }
@@ -149,17 +148,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "11b4db4b622a0637",
+  "active": "d3ca2f73f8f2949f",
   "lastOpenFiles": [
-    "Year 3/Semester 1/Structure of Computer Systems/Project/0.Project Overview.md",
-    "Year 3/Semester 1/Structure of Computer Systems/Project/0.About the Project.md",
-    "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 4.md",
-    "Year 2/Semester 2/CA/Lab 4.1 (Hw).md",
-    "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 3.md",
-    "Year 3/Semester 1/Functional Programming/Lab/L6.md",
-    "Year 3/Semester 1/Functional Programming/Lab/Assignment 1.md",
-    "Year 3/Semester 1/Functional Programming/Lab/Test 2 Preparation.md",
-    "Year 3/Semester 1/Functional Programming/Lab/L8.md",
-    "Year 3/Semester 1/Functional Programming/Lab/L5.md"
+    "Year 3/Semester 1/Structure of Computer Systems/Lab/L7 - MIPS ISA.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Lab/L9 MIPS Implementation.md",
+    "Year 3/Semester 1/Structure of Computer Systems/Lab/L10.md",
+    "Year 3/Semester 1/Graphic Processing/Lab/L8.md",
+    "Year 3/Semester 1/Graphic Processing/Lab/L9.md",
+    "Year 3/Semester 1/Design with Microprocessors/Lab/L10.md",
+    "Year 3/Semester 1/Design with Microprocessors/Project/1. Our choice - Door lock system 🔐.md",
+    "Year 3/Semester 1/Design with Microprocessors/Project/0. Brainstorming.md",
+    "Year 3/Semester 1/Design with Microprocessors/Lab/L5.md",
+    "Year 3/Semester 1/Design with Microprocessors/Lab/L4.md"
   ]
 }
