@@ -152,11 +152,40 @@ end if;
 ```
 
 ### 3. HDU ID
-- [ ] Tested functional
-- [ ] TopLevel functional
+
+- confirm hazzard occurrence
+	- [x] Done
+- added necessary hw configurations
+	- mux for ctl signals
+	- pc en
+	- if_id enable
+- Did not create tb for this component!
+
+> [!Warning] Stalling works but
+> - the forwarded data to the register that comes from the mem unit is the ALUOutput, not the memory output
+> - Solution `forward the result of the WB MUX, not the ALUOut pipeline value from MEM/WB`
+
+- [x] Tested functional
+- [x] TopLevel functional
+
+```vhdl
+-- Load Data Hazard
+      B"010_001_011_0000001",-- load $3 <= MEM($1 + '1')
+      B"000_011_100_010_0_001",-- add $2 <= $3 + $4
+      others => x"0000"
+```
+
+> [!important] Documentation modification  📝
+> - we don't forward from ALUOut in MEM/WB, but from WB_MUX_Out
 
 ### 4. Add branch to ID stage
 - add jump computation in IF `necessary? - I guess yea`
+- add comparison unit to ID
+	- [x] Test with no other hazard - looks promising
+	- [x] Detected the hazard (next instruction's impact is visible even though we jumped)
+
+- remove branch from MEM unit and the propagation of the signal (ich)
+	- [ ] Done
 
 #### 4.1. Extend HDU
 - [ ] Tested functional
