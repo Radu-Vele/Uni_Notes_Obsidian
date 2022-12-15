@@ -110,7 +110,7 @@ end if;
 Changes in hardware:
 - add a WB buffer to check the dependency to the instruction before the previous one
 
-> [!warning] Previous design mistake
+> [!important] Solved Previous design mistake
 > The mux added at input B of ALU in EX stage should be placed before the one that switched between I type or R type
 > `TODO: modify the diagram in the documentation :)`
 
@@ -161,9 +161,11 @@ end if;
 	- if_id enable
 - Did not create tb for this component!
 
-> [!Warning] Stalling works but
+> [!important] `Solved` Stalling works but
 > - the forwarded data to the register that comes from the mem unit is the ALUOutput, not the memory output
 > - Solution `forward the result of the WB MUX, not the ALUOut pipeline value from MEM/WB`
+
+
 
 - [x] Tested functional
 - [x] TopLevel functional
@@ -173,31 +175,200 @@ end if;
       B"010_001_011_0000001",-- load $3 <= MEM($1 + '1')
       B"000_011_100_010_0_001",-- add $2 <= $3 + $4
       others => x"0000"
+
+-- Load Data Hazard
+      B"000_011_100_001_0_001",-- add $1 <= $3 + $4
+      B"000_011_100_010_0_001",-- add $2 <= $3 + $4
+      B"000_011_100_101_0_001",-- add $5 <= $3 + $4
+      B"000_011_100_110_0_001",-- add $6 <= $3 + $4
+      B"000_011_100_111_0_001",-- add $7 <= $3 + $4
+      B"100_001_010_1111011", -- beq 1 2 -5
+      B"000_011_100_000_0_001",-- add $0 <= $3 + $4
+      B"000_000_011_111_0_001",-- add $7 <= $3 + $0
+
+      others => x"0000"
 ```
 
 > [!important] Documentation modification  📝
 > - we don't forward from ALUOut in MEM/WB, but from WB_MUX_Out
 
-### 4. Add branch to ID stage
+### 4. Handle control hazards
+#### 4.0 Move branch to ID stage
 - add jump computation in IF `necessary? - I guess yea`
 - add comparison unit to ID
 	- [x] Test with no other hazard - looks promising
 	- [x] Detected the hazard (next instruction's impact is visible even though we jumped)
 
-- remove branch from MEM unit and the propagation of the signal (ich)
-	- [ ] Done
+- remove branch from MEM and EX units 
+	- [x] Done
+- remove zero detection from ALU
 
-#### 4.1. Extend HDU
-- [ ] Tested functional
-- [ ] TopLevel functional
+> [!remark] Finally
+> I will remove the unused signals from the pipeline registers - error prone big time
 
-#### 4.2. Forwarding Unit ID
-- [ ] Tested functional
-- [ ] TopLevel functional
+#### 4.1. Add flushing mechanism
+- mechanism: basically reset the IF/ID i.g.
+-  [x] Tested functional
+
+#### 4.2 BHT Implementation
+- [x] Tested functional in IF unit
+	- [x] it looks pretty good, now I just need some test cases in the toplevel to make sure they are covered
+
+> [!important] `Solved:` Issue with data hazards resolution
+> - check why XXXX value is forwarded to ALU inputs
+> - ![[Pasted image 20221212224814.png]]
+> - solution: `added the condition to check forward the reg file write data to read data only when the regwrite signal is on HIGH`
+
+- fibonnaci code tested ok - after two iterations, the right target address is chosen
+	- [x] Done
+
+```vhdl
+    -- infinite fibonnaci
+      B"000_001_010_011_0_001", -- 0: add $3 = $1 + $2
+      B"000_010_000_001_0_001", -- 1: add $1 = $2 + $0
+      B"000_011_000_010_0_001", -- 2: add $2  = $3 + $0
+      B"100_000_000_1111100", -- 3: beq $0 $0 -4
+      B"000_001_010_011_0_001", 
+```
+
+- check some more situations
+	- branch is not taken anymore (loop is finished)
+
+>[!important] `Solved:` I kinda need bneq for looping with a purpose
+>- what does it imply to add branch on not equal?
+>	1. Modify the branch taken signal in ID to be 
+>		`Branch_Taken <= '1' when ((temp_rd1 = temp_rd2 and Branch_instruction = '1') or (temp_rd1 /= temp_rd2 and Branch_NE_instruction)) else '0';`
+>	2. branch address is the same
+>	3. Add to control unit the case for branch not equal and generate the signal (no need for propagation)
+
+- add bnq
+	- [x] Done
+- test
+```vhdl
+-- Dynamic branch prediction
+    -- 5 fibonnaci numbers to be computed 2 -> 5 -> 7 -> 12 -> 19
+      B"011_000_000_0000000",-- 0: store MEM[0] <= $0 - constant 0
+      B"010_000_100_0000000",-- 1: load $4 MEM[0] = 0
+      B"010_000_101_0000001",-- 2: load $5 MEM[1] = 5
+      B"001_100_100_0000001", -- 3: addi $4 = $4 + 1 -- counter
+      B"000_001_010_011_0_001", -- 4: add $3 = $1 + $2
+      B"000_010_000_001_0_001", -- 5: add $1 = $2 + $0
+      B"000_011_000_010_0_001", -- 6: add $2  = $3 + $0
+      B"110_100_101_1111011", -- 7: bneq $4 $5 -5
+      B"011_000_010_0000110", -- 8: store MEM[6] <- $2
+      others => x"0000"
+```
+	- [x] Does NOT work properly
+
+> [!important] `Solved` Design Issue
+> - In the BHT mechanism, if a branch was taken and it was not supposed to be taken, the flush signal selects the multiplexer that loads the branch address to PC, but we want the `Previous!` PC + 1 address to be loaded in that case (MSB_Pred = 1 and )
+
+> [!important] `Solved`Synchronization issue
+> - branch taken signal needs to be generated only after the registers have been read (falling edge clock)
+> - at the moment the branch taken signal is not generated properly
+> - there is actually no need for this!!!
+
+- [x] The moment a loop is exited works ok
+
+- [x] Make sure it iterates the right number of times
+
+```vhdl
+-- Dynamic branch prediction
+    -- 5 fibonnaci numbers to be computed 2 -> 5 -> 7 -> 12 -> 19
+      B"011_000_000_0000000",-- 0: store MEM[0] <= $0 - constant 0
+      B"010_000_100_0000000",-- 1: load $4 MEM[0] = 0
+      B"010_000_101_0000001",-- 2: load $5 MEM[1] = 5
+      B"001_100_100_0000001", -- 3: addi $4 = $4 + 1 -- counter
+      B"000_001_010_011_0_001", -- 4: add $3 = $1 + $2
+      B"000_010_000_001_0_001", -- 5: add $1 = $2 + $0
+      B"000_011_000_010_0_001", -- 6: add $2  = $3 + $0
+      B"110_100_101_1111011", -- 7: bneq $4 $5 -5
+      B"011_000_010_0000110", -- 8: store MEM[6] <- $2
+      B"111_0000000000000",-- 9: Jump 0
+```
+
+- execute the same program multiple times
+	- Add a jump to the beginning!
+	- [x] Works properly (BHT allows us to loop correctly straight from the first iteration)
+
+- [x] TopLevel functional
+
+#### 4.2. Extend HDU (no loads before branch)
+
+- possibility:
+	1. previous instruction (R or I type) had the destination address equal to one of the sources of the branch 
+```vhdl
+B"000_001_010_011_0_001",-- add $1 $ 2 $3
+B"100_001_011_0000010", -- beq $1 $3 
+-- exprected behavior: branch is taken even tho it was not supposed to
+-- the condition ID_Branch = 1 and ID/EX RegWrite = 1 and source of branch equals destination of ID_EX
+```
+
+- [x] Test Occurance of the conditions
+	- the conditions occur (may need to be careful if I impact the branch taken signal generation :/ - I don't want to impact the BHT or so)
+
+Add stalling for the prv instruction
+- [x] Done
+Tested ok
+- [x] Done
+
+- [x] Tested functional
+- [x] TopLevel functional
+
+#### 4.3. Forwarding Unit ID (no loads before branch)
+
+- added the forwarding unit in ID
+
+```vhdl
+    -- branch after write condition
+      B"000_001_010_011_0_001",-- add $1 $ 2 $3
+      B"100_001_011_0000010", -- beq $1 $3 
+      B"000_101_110_111_0_001", -- add $5 $6 $7
+      others => x"0000"
+-- with forwarding the branch is taken as initially 1 is equal to 3 but the addition on instruction 0 changes the value of 3
+```
+
+- [x] Tested functional
+- [x] TopLevel functional
+
+Does it work for the case when I initially dont take the branch, but then I do
+- [x] Yep
+
+### 4.4. ID FWD from inst before the previous
+- need to insert a stall if there is a dependency between current branch in id and the instructions 2 steps before (EX/MEM)
+- but **no forwarding** is required
+
+```vhdl
+    -- branch after someting after write condition
+      B"000_001_010_011_0_001",-- add $1 $ 2 $3
+      B"000_101_110_111_0_001", -- add $1 $2 $3
+      B"100_001_011_0000010", -- beq $1 $3 
+      B"000_101_110_111_0_001", -- add $5 $6 $7
+      others => x"0000"
+```
+
+check the condition
+```vhdl
+EX_MEM_RegWrite = '1' and ID_Branch = '1' and EX_MEM_RegWrite = ID_Rs or ID_Rt
+```
 
 
-### 5. BHT Implementation
-- [ ] Tested functional
-- [ ] TopLevel functional
+Does it work for the case when I initially  take the branch, but then I do not?
+- [x] Yep
+
+### Special case for load before branch: check
+- 2 stalls are inserted
+```vhdl
+      B"010_000_011_0000000", -- load $3 = MEM[0]
+      B"100_100_011_0000010", -- beq $4 $3 
+      B"000_101_110_111_0_001", -- add $5 $6 $7
+```
+
+### Check what happens to the BHT in the context of stalling the ID for branches
+- may need to add an enable to validate incrementing and stuff based on 
+- not really sure, I could leave this for the testing part
+
+## Final Adjustments:
+- revisit the solved design issue and modify the corresponding diagrams and/or pipeline register width, and stuff.
 
 

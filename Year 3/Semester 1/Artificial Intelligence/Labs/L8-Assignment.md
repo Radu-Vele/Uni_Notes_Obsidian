@@ -1,9 +1,10 @@
 # First Order Logic cont'd
 
-### Assignment 
+## Assignment 
 
 > [!info] Assignment on Logics
 > - Deadline `Sunday 18 december`
+> - Postponed for `23 december`
 
 _Task:_ Implement something of your own choice with Prover9/Mace4.
 
@@ -104,10 +105,14 @@ in the big one such that no two overlap? (see paper)
 
 39. Can you crack the code (puzzles similar to https://me.me/i/will-you-crack-the-code-o-6-8-2-one-6091172)
 
-
+### My choice:
+Maybe one of the:
+	- 33. Logic puzzles. For instance, https://www.braingle.com/brainteasers/Logic.html
+	- 20. Compilers and Prover9 (see paper)
+	- 7. Hardware verification  (some examples http://www.tptp.org/cgi-bin/SeeTPTP?Category=Problems&Domain=HWV)
+	- 0a. AllOuts - extend the game with other patterns or else (https://users.utcluj.ro/~agroza/papers/2022/iccp2022_preprint_borbalagroza.pdf)
 
 # Lab 8 Material - Inference in FOL
-
 ### Resolution
 
 ### Skolemization
