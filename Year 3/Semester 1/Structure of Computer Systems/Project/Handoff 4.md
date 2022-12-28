@@ -1,4 +1,4 @@
-# Implementation 👨‍💻
+# Implementation 1 👨‍💻
 - write some code
 - be able to test it and show - no grade though
 - should finish implementation by `19 December` - ask documentation questions before that
@@ -7,7 +7,7 @@
 > [!question] Questions?
 > - should I make testbenches for each forwarding unit/hazard detection?
 > 	- `I guess so`
-> - mips testbench for Identifying the instructions more easily? - set some aliases maybe?
+> - mips testbench for Identifying the instructions more easily? - set some aliases maybe? `not really necessary`
 
 ## 1. Test the existing pipeline:
 - adapt it - define exact requirements
@@ -116,8 +116,6 @@ Changes in hardware:
 
 - [x] the hazard occured
 
-Implement hazard detection unit
-
 ```vhdl
 Forward_C <= "00";
 
@@ -165,8 +163,6 @@ end if;
 > - the forwarded data to the register that comes from the mem unit is the ALUOutput, not the memory output
 > - Solution `forward the result of the WB MUX, not the ALUOut pipeline value from MEM/WB`
 
-
-
 - [x] Tested functional
 - [x] TopLevel functional
 
@@ -191,10 +187,10 @@ end if;
 
 > [!important] Documentation modification  📝
 > - we don't forward from ALUOut in MEM/WB, but from WB_MUX_Out
-
+	
 ### 4. Handle control hazards
+
 #### 4.0 Move branch to ID stage
-- add jump computation in IF `necessary? - I guess yea`
 - add comparison unit to ID
 	- [x] Test with no other hazard - looks promising
 	- [x] Detected the hazard (next instruction's impact is visible even though we jumped)
@@ -207,7 +203,7 @@ end if;
 > I will remove the unused signals from the pipeline registers - error prone big time
 
 #### 4.1. Add flushing mechanism
-- mechanism: basically reset the IF/ID i.g.
+- mechanism: basically reset the IF/ID i.g and set all control signals to 0
 -  [x] Tested functional
 
 #### 4.2 BHT Implementation
@@ -258,7 +254,7 @@ end if;
       B"011_000_010_0000110", -- 8: store MEM[6] <- $2
       others => x"0000"
 ```
-	- [x] Does NOT work properly
+- [x] Does NOT work properly
 
 > [!important] `Solved` Design Issue
 > - In the BHT mechanism, if a branch was taken and it was not supposed to be taken, the flush signal selects the multiplexer that loads the branch address to PC, but we want the `Previous!` PC + 1 address to be loaded in that case (MSB_Pred = 1 and )
@@ -269,7 +265,6 @@ end if;
 > - there is actually no need for this!!!
 
 - [x] The moment a loop is exited works ok
-
 - [x] Make sure it iterates the right number of times
 
 ```vhdl
@@ -334,7 +329,7 @@ Tested ok
 Does it work for the case when I initially dont take the branch, but then I do
 - [x] Yep
 
-### 4.4. ID FWD from inst before the previous
+#### 4.4. ID FWD from inst before the previous
 - need to insert a stall if there is a dependency between current branch in id and the instructions 2 steps before (EX/MEM)
 - but **no forwarding** is required
 
@@ -356,19 +351,22 @@ EX_MEM_RegWrite = '1' and ID_Branch = '1' and EX_MEM_RegWrite = ID_Rs or ID_Rt
 Does it work for the case when I initially  take the branch, but then I do not?
 - [x] Yep
 
-### Special case for load before branch: check
+#### Special case for load before branch: check
 - 2 stalls are inserted
 ```vhdl
-      B"010_000_011_0000000", -- load $3 = MEM[0]
-      B"100_100_011_0000010", -- beq $4 $3 
-      B"000_101_110_111_0_001", -- add $5 $6 $7
+-- branch after write condition
+    B"010_000_011_0000000", -- load $3 = MEM[0]
+    B"100_100_011_0000010", -- beq $4 $3 
+    B"000_101_110_111_0_001", -- add $5 $6 $7
 ```
 
-### Check what happens to the BHT in the context of stalling the ID for branches
-- may need to add an enable to validate incrementing and stuff based on 
-- not really sure, I could leave this for the testing part
+#### Check what happens to the BHT in the context of stalling the ID for branches
+- not really sure, I could leave this for the testing part, maybe add an enable that works at the same time with pc enable (for writing) - it looks pretty much alright
 
-## Final Adjustments:
-- revisit the solved design issue and modify the corresponding diagrams and/or pipeline register width, and stuff.
+- add jump computation in IF `necessary? - I guess yea
+	This should not really raise any issues regarding other components
+	- [x] Done
+
+🏆
 
 
