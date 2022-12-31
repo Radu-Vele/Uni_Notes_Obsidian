@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "78a447985bda1d35",
+        "id": "6440989f68cc3daf",
         "type": "tabs",
         "children": [
           {
-            "id": "acc1efe8e71a22ac",
+            "id": "be7656e5bcac2533",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Year 3/Semester 1/Software Engineering/Project/3.1. Accounts and Persistence.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1bbc54c37a5b298c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 6.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 262.5,
-    "collapsed": true
+    "width": 262.5
   },
   "right": {
     "id": "e2aa1390c482dfaa",
@@ -159,17 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "acc1efe8e71a22ac",
+  "active": "be7656e5bcac2533",
   "lastOpenFiles": [
+    "Year 3/Semester 1/Software Engineering/Lab/L12.md",
+    "Year 3/Semester 1/Software Engineering/About the Course.md",
+    "Year 3/Semester 1/Software Engineering/Project/0.0 About the project.md",
+    "Year 3/Semester 1/Software Engineering/Project/3.1. Accounts and Persistence.md",
     "Year 3/Semester 1/Software Engineering/Project/3.0 Model and Database.md",
     "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 4.md",
     "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 6.md",
     "Year 3/Semester 1/Structure of Computer Systems/Project/Handoff 5.md",
     "Year 3/Semester 1/Structure of Computer Systems/Project/0.Project Overview.md",
-    "Pasted image 20221010125943.png",
-    "Pasted image 20221010085856.png",
-    "Year 3/Semester 1/Software Engineering/Project/3.1. Accounts and Persistence.md",
-    "Year 3/Semester 1/Software Engineering/Project/2.1. Recommender Systems.md",
-    "Year 3/Semester 1/Software Engineering/Project/3.2. React ⚛.md"
+    "Pasted image 20221010125943.png"
   ]
 }
