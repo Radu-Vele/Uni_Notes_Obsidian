@@ -4,11 +4,11 @@
 - Add ***Testing*** chapter to include all test cases (described below)
 	- Watch out for any issues 🙈
 	- Prepare the environment for simulating everything in front of prof.
-	- [ ] Done
+	- [x] Done
 
 #### 2. Reorganize Documentation 📃
 
-- Extend ***Project Analysis*** to contain more information about the logic of each added component (natural language description, what happens, not related to signal naming convention or so)
+- Extend ***Project Analysis*** to contain more information about the logic of each element of the hazard detection and resolution (natural language description, what happens, not related to signal naming convention or so)
 	- [ ] Done
 - Modify ***Design*** - remove the I/O descriptions, move them + output description tables to Implementation. What *remains* is pretty much related to diagrams, sub-components of each added unit.
 	- [ ] Done
